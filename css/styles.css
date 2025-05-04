@@ -206,4 +206,34 @@ button:hover {
     text-decoration: none;
 }
 
+/* ------------------- Contatos ---------------------- */
+
+.social-links-contato{
+    position: relative;
+    display: inline;
+  }
+  
+.social-links-contato a {
+    display: inline;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 24px;
+    color: white;
+    text-align: center;
+    -webkit-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.1);
+  }
+  
+.social-links-contato a:hover {
+    -webkit-box-shadow: 0px 6px 18px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 6px 18px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 6px 18px 0px rgba(0,0,0,0.2);
+  }
+  
+.social-links-contato a i {
+    line-height: 15px;
+    font-size: 23px;
+  }
 
