@@ -4,12 +4,12 @@ html, body {
 }
 
 body {
-    background-color: #333; 
+    background-color: black; 
     font-family: montserrat, sans-serif;
 }
 
 button {
-    background-color: #333;
+    background-color: black;
     color: #7D80E1;
     border: 2px solid;
     border-color: #7D80E1;
@@ -28,7 +28,7 @@ button:hover {
 }
 
 .menu {
-    background-color: #333;
+    background-color: black;
     color: white;
     height: 50px;
 }
@@ -149,6 +149,61 @@ button:hover {
     line-height: 36px;
     font-size: 16px;
   }
+
+  /* ------------------- Curriculo ---------------------- */
   
+.main {
+    padding: 40px 180px 80px 100px;
+}
+
+.main img {
+    float: left;
+    width: 280px;
+    height: 280px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+  .main h1 {
+    color: white;
+    font-weight: normal;  
+}
+
+.main h2 {
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-top: 40px;
+}  
+
+.main h3 {
+    color: #7D80E1;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.main p {
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 24px;
+    text-align: justify;
+}
+
+.caminho {
+    list-style: none;
+    padding-left: 0;
+    color: gray;
+}
+
+.caminho li {
+    display: inline-block;
+}
+
+.link-cur {
+    color: white;
+    text-decoration: none;
+}
 
 
