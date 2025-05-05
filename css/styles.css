@@ -8,7 +8,7 @@ body {
     font-family: montserrat, sans-serif;
 }
 
-button {
+.button {
     background-color: black;
     color: #7D80E1;
     border: 2px solid;
@@ -16,15 +16,21 @@ button {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    margin-left: 150px;
+    margin-left: 315px;
     font-family: montserrat, sans-serif;
     transition: 0.4s;
+    text-decoration: none;
+
+    animation-name: profile-titulo;
+    animation-duration: 4s;
 }
 
-button:hover {
+
+.button:hover {
     background-color: #7D80E1;
     color: white;
     border-color: #7D80E1;
+    transition: 0.4s;
 }
 
 .menu {
@@ -40,6 +46,7 @@ button:hover {
     font-weight: 400;   
     display: inline-block;
     color: #7D80E1;
+    font-family: "Pacifico", cursive;
 }
 
 .menu ul {
@@ -61,6 +68,24 @@ button:hover {
     color: white;
 }
 
+.menu a {
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+}
+
+.menu a:hover {
+    color: #7D80E1;
+    font-size: 20px;
+    transition: 0.5s;
+    
+}
+
+.menu li.threeline {
+    display: none;
+
+}
+
 .capa {
     color: white;
 }
@@ -79,6 +104,9 @@ button:hover {
     text-align: center;
     width: 30%;
     margin-top: 100px;
+
+    animation-name: profile-capa;
+    animation-duration: 3s;
 }
 
 .profile-pic img {
@@ -93,7 +121,11 @@ button:hover {
     display: flex;
     width: 60%;
     margin-top: 150px;;
+    margin-bottom: 10px;
     text-align: center;
+
+    animation-name: profile-titulo;
+    animation-duration: 3s;
 }
 
 .profile-title h1 {
@@ -148,12 +180,21 @@ button:hover {
 .social-links a i {
     line-height: 36px;
     font-size: 16px;
+    transition: 0.4s;   
+  }
+
+  .social-links a i:hover {
+    font-size: 20px;
+    transition: 0.4s;
   }
 
   /* ------------------- Curriculo ---------------------- */
   
 .main {
     padding: 40px 180px 80px 100px;
+
+    animation-name: conteudo;
+    animation-duration: 2s;
 }
 
 .main img {
@@ -201,8 +242,13 @@ button:hover {
     display: inline-block;
 }
 
+.caminho li a {
+    color: gray;
+    text-decoration: none;
+}
+
 .link-cur {
-    color: white;
+    color: #7D80E1;
     text-decoration: none;
 }
 
@@ -259,10 +305,12 @@ button:hover {
     background-color: black;
     opacity: 0;
     padding-top: 120px;
+    transition: 0.4s;
   }
 
   .blackbox:hover {
-    opacity: 0.5;
+    opacity: 0.8;
+    transition: 0.4s;
   }
 
   .blackbox-text {
@@ -281,4 +329,20 @@ button:hover {
     text-transform: none;
     font-weight: 100;
     margin-top: 0;
+  }
+
+
+  @keyframes profile-capa {
+    0% {opacity: 0; transform: translate(0px, 20px);}
+    100% {opacity: 1; transform: translate(0px, 0px);}
+  }
+
+    @keyframes profile-titulo {
+        0% {opacity: 0; transform: translate(0px, -20px);}
+        100% {opacity: 1; transform: translate(0px, 0px);}
+    }
+
+  @keyframes conteudo {
+    0% {opacity: 0; transform: translate(-20px, 0px);}
+    100% {opacity: 1; transform: translate(0px, 0px);}
   }
