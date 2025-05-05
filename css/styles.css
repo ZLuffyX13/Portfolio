@@ -351,6 +351,8 @@ body {
 
     .menu {
       position: relative;
+      height: auto;
+      overflow: hidden;
     }
 
     .menu li {
@@ -372,10 +374,18 @@ body {
       transform: translateY(-50%);
       display: inline-block;
       text-align: right;
-  }
+      border-bottom: none;
+    }
+
+      .menu li.threeline:hover {
+        color: #7D80E1;
+        cursor: pointer;
+
+      }
 
   .capa {
     text-align: center;
+    margin-top: 250px;
   }
 
   .capa div {
@@ -423,6 +433,7 @@ body {
 
   .main {
     padding: 10px 5% 40px 5%;
+    margin-top: 215px;
   }
 
   .main p {
@@ -449,5 +460,32 @@ body {
   .blackbox {
     opacity: 0.8;
   }
-  
+
+  .menujs {
+    height: auto;
+    overflow: visible;
   }
+
+  .menujs ul {
+    text-align: center;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+  
+  .menujs li {
+    display: block;
+    border-bottom: solid gray 1px;
+    width: 100%;
+    padding: 0;
+    font-weight: 400;
+  }
+
+  .menujs li a {
+    display: block;
+    padding: 10px 0;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+  }
+
+}
